@@ -1,7 +1,5 @@
 package Jobsheet1;
 
-
-
 public class BikeDemo {
     public static void main(String[] args) {
         Bike mountainBike1 = new Bike();
