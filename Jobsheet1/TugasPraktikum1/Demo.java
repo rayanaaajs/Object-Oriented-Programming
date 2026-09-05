@@ -3,7 +3,6 @@ package Jobsheet1.TugasPraktikum1;
 public class Demo {
     public static void main(String[] args) {
 
-
         Motor motor = new Motor();
         Sepeda sepeda = new Sepeda();
         Handphone hp = new Handphone();
@@ -19,7 +18,6 @@ public class Demo {
         motor.bunyikanBel();
         motor.bergerak();
         motor.berhenti();
-
 
         sepeda.merk = "exotic";
         sepeda.warna = "oranye";
@@ -39,17 +37,12 @@ public class Demo {
         hp.nyalakan();
         hp.kirimPesan();
 
-
         kipas.merk = "Sanken";
         kipas.kecepatan = 3;
         System.out.println("");
         kipas.cetakInfo();
         kipas.hidupkan();
         kipas.ubahKecepatan();
-
-
-
-
     }
 }
 
