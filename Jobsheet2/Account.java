@@ -3,9 +3,7 @@ package Jobsheet2;
 public class Account {
     public String ownerName;
     public double balance;
-    public Account(){
-        
-    }
+
     public Account(String ownerName, double balance){
         this.ownerName = ownerName;
         this.balance = balance;
@@ -33,6 +31,16 @@ public class Account {
 
     public boolean isOverdrawn(){
         return balance < 0;
+    }
+
+    public void transferTo (Account target, double amount) {
+        if (this.balance >= amount) {
+            this.withdraw(amount);
+            target.deposit(amount);
+        } else {
+            System.out.println("Transfer rejected: insufficient balance.");
+        }
+        
     }
 }
 
