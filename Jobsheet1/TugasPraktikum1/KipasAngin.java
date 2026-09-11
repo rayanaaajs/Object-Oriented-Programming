@@ -1,4 +1,4 @@
-package Jobsheet1.TugasPraktikum1;
+package jobsheet1.TugasPraktikum1;
 
 public class KipasAngin {
     String merk;

@@ -1,4 +1,4 @@
-package Jobsheet2;
+package jobsheet2;
 
 public class Account {
     public String ownerName;

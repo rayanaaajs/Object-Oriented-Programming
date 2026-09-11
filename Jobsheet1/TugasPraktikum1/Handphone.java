@@ -1,4 +1,4 @@
-package Jobsheet1.TugasPraktikum1;
+package jobsheet1.TugasPraktikum1;
 
 public class Handphone {
     String merk, sistemOperasi;
