@@ -1,4 +1,4 @@
-package jobsheet5;
+package jobsheet6;
 
 public class Customer {
     private String name;

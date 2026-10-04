@@ -1,4 +1,4 @@
-package jobsheet5;
+package jobsheet6;
 
 public class Main {
     public static void main(String[] args) {
@@ -14,9 +14,18 @@ public class Main {
         acc2.printInfo();
         acc2.printAccountType();
 
+        // 3. BusinessAccount (Tugas Mandiri)
+        Customer customer3 = new Customer("Budi", "0812-0000-0003");
+        BusinessAccount acc3 = new BusinessAccount("A003", customer3, 1000000, 25000);
+
         Bank bank = new Bank(10);
         bank.addAccount(acc1);
         bank.addAccount(acc2);
+        bank.addAccount(acc3);
         bank.printAllAccounts();
+
+        // Membuktikan printAccountType milik BusinessAccount berfungsi
+        System.out.println("\n=== Cek Tipe Akun Business ===");
+        acc3.printAccountType();
     }
 }
