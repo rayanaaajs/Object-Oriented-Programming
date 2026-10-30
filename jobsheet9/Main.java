@@ -2,6 +2,7 @@ package jobsheet9;
 
 public class Main {
     public static void main(String[] args) {
+        //jobsheet 9
         Customer customer1 = new Customer("Nadia", "0812-0000-0001");
         SavingsAccount acc1 = new SavingsAccount("A001", customer1, 500000, 0.01);
         acc1.withdraw(150000);
@@ -28,7 +29,10 @@ public class Main {
         System.out.println("Before Interest: " + savings.getBalance());
         savings.applyInterest();
         System.out.println("After Interest: " + savings.getBalance());
-
+        
+        //test
+        System.out.println(acc2.auditLog());
+        System.out.println(checking.auditLog());
 
     }
 }

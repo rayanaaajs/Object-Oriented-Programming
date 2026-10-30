@@ -33,6 +33,7 @@ public class Bank {
         }
     }
 
+    // jobsheet 9
     public void printMonthlyFee(){
         for (int i = 0; i < count; i++) {
             System.out.println(accounts[i].getAccountNumber() + " fee: " + accounts[i].monthlyFee());

@@ -9,6 +9,7 @@ public class SavingsAccount extends Account implements InterestBearing  {
         this.interestRate = interestRate;
     }
 
+    //jobsheet 9
     public double monthlyFee(){
         return 0;
     }
@@ -17,6 +18,7 @@ public class SavingsAccount extends Account implements InterestBearing  {
         return interestRate;
     }
 
+    //jobsheet 9
     @Override
     public void applyInterest(){
         double interest = getBalance() * interestRate;
