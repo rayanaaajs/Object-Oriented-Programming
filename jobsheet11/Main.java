@@ -11,6 +11,9 @@ public class Main {
         Customer customer3 = new Customer("Rian", "0812-0000-0003");
         SavingsAccount savings = new SavingsAccount("A003", customer3, 100000, 0.02);
 
+        Customer customer4 = new Customer("Budi", "0812-0000-0004");
+        BusinessAccount business = new BusinessAccount("A004", customer4, 2000000, 0.0);
+
         try {
             savings.withdraw(70000);
         } catch (InsufficientBalanceException e) {
@@ -24,10 +27,14 @@ public class Main {
             System.out.println("Withdrawal failed: " + e.getMessage());
         }
 
-        Bank bank = new Bank(10);
+        Bank bank = new Bank(new InMemoryAccountRepository());
         bank.addAccount(acc1);
         bank.addAccount(acc2);
         bank.addAccount(savings);
         bank.processMonthEnd();
+        bank.printHistory("A003");
+        bank.addAccount(business);
+
+        bank.printAllAccounts();
     }
 }
